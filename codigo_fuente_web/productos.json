@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Llaveros personalizados",
+    "precio": "Desde $500",
+    "imagen": "img/producto1.jpg"
+  },
+  {
+    "nombre": "Figuras decorativas",
+    "precio": "Desde $1500",
+    "imagen": "img/producto2.jpg"
+  },
+  {
+    "nombre": "Soportes para celular",
+    "precio": "Desde $800",
+    "imagen": "img/producto3.jpg"
+  }
+]
