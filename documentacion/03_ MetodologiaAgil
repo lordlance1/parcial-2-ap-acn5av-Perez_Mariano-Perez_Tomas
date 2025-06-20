@@ -1,0 +1,44 @@
+#  Metodología Ágil
+
+ Documento: `03_metodologia_agil.md`  
+ Fecha: 20/06/2025  
+ Versión: 0.3  
+ Autores: Mariano Pérez, Tomás Pérez
+
+---
+
+##  Metodología utilizada
+
+**SCRUM con soporte visual a través de GitHub Projects**
+
+---
+
+##  Justificación
+
+SCRUM se adapta bien al desarrollo incremental que necesitamos para este proyecto. Nos permite organizar tareas en ciclos cortos (sprints) y entregar funcionalidades de forma continua.
+
+Usaremos **GitHub Projects** como herramienta de visualización para gestionar tareas, historias de usuario y seguimiento del progreso del equipo. Su integración directa con issues y commits del repositorio facilita el versionado y control de cambios.
+
+---
+
+##  Características implementadas
+
+- Sprints semanales.
+- Reuniones diarias breves (check-in asincrónico mediante comentarios en issues).
+- Reuniones de planificación y revisión por cada sprint.
+- Uso de backlogs para priorizar tareas.
+- Tablero visual con columnas:
+  - **To Do** (pendiente)
+  - **In Progress** (en progreso)
+  - **In Review** (en revisión)
+  - **Done** (terminado)
+
+---
+
+##  Tablero de proyecto
+
+https://github.com/users/lordlance1/projects/2/views/1
+
+
+
+
