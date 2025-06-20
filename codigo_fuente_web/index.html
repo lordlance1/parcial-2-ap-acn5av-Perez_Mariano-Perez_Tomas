@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda 3D</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Tienda de Productos 3D</h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#subida">Subí tu modelo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienvenida">
+      <h2>Bienvenido/a</h2>
+      <p>Conocé nuestros productos impresos en 3D o subí tu propio diseño.</p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <div class="productos">
+        <!-- Productos se agregarán acá dinámicamente -->
+      </div>
+    </section>
+
+    <section id="subida">
+      <h2>Subí tu modelo</h2>
+      <form>
+        <label for="archivo3d">Archivo 3D (.stl o .obj):</label>
+        <input type="file" id="archivo3d" name="archivo3d" accept=".stl,.obj" />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu email" required />
+        <textarea placeholder="Consulta"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tienda3D - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
