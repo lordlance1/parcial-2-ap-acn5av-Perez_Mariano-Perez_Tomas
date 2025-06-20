@@ -19,11 +19,13 @@
   </header>
 
   <main>
+    <!-- Catálogo dinámico -->
     <section id="catalogo">
       <h2>Catálogo de Productos</h2>
       <div id="contenedor-productos"></div>
     </section>
 
+    <!-- Subida de modelo -->
     <section id="subida">
       <h2>Subí tu Modelo 3D</h2>
       <form action="/upload" method="post" enctype="multipart/form-data">
@@ -35,16 +37,21 @@
       </form>
     </section>
 
+    <!-- Contacto con validación -->
     <section id="contacto">
       <h2>Contacto</h2>
-      <form action="/contacto" method="post">
+      <form id="form-contacto">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" required />
+
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required />
+
         <label for="mensaje">Mensaje:</label>
         <textarea name="mensaje" id="mensaje"></textarea>
+
         <button type="submit">Enviar</button>
+        <p id="mensaje-estado" class="estado"></p>
       </form>
     </section>
   </main>
@@ -53,7 +60,10 @@
     <p>&copy; 2025 3D Custom Hub - Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/catalogo.js"></script>
+  <script src="js/contacto.js"></script>
 </body>
 </html>
+
 
