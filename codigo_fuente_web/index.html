@@ -3,56 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tienda 3D</title>
+  <title>3D Custom Hub</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Tienda de Productos 3D</h1>
+    <h1>3D Custom Hub</h1>
     <nav>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#subida">Subí tu modelo</a>
-      <a href="#contacto">Contacto</a>
+      <ul>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#subida">Subí tu modelo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section id="bienvenida">
-      <h2>Bienvenido/a</h2>
-      <p>Conocé nuestros productos impresos en 3D o subí tu propio diseño.</p>
-    </section>
-
     <section id="catalogo">
-      <h2>Catálogo</h2>
-      <div class="productos">
-        <!-- Productos se agregarán acá dinámicamente -->
-      </div>
+      <h2>Catálogo de Productos</h2>
+      <div id="contenedor-productos"></div>
     </section>
 
     <section id="subida">
-      <h2>Subí tu modelo</h2>
-      <form>
-        <label for="archivo3d">Archivo 3D (.stl o .obj):</label>
-        <input type="file" id="archivo3d" name="archivo3d" accept=".stl,.obj" />
-        <button type="submit">Enviar</button>
+      <h2>Subí tu Modelo 3D</h2>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="archivo">Archivo STL/OBJ:</label>
+        <input type="file" name="archivo" id="archivo" accept=".stl,.obj" required />
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" id="comentarios" placeholder="Detalles del pedido"></textarea>
+        <button type="submit">Enviar Modelo</button>
       </form>
     </section>
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu email" required />
-        <textarea placeholder="Consulta"></textarea>
+      <form action="/contacto" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
         <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tienda3D - Todos los derechos reservados</p>
+    <p>&copy; 2025 3D Custom Hub - Todos los derechos reservados.</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="js/catalogo.js"></script>
 </body>
 </html>
+
